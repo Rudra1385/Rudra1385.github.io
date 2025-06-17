@@ -111,3 +111,31 @@ a[href^="http"]:after {
   content: " 🔗";
   font-size: 0.8em;
 }
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 6px;
+  background: #f0f0f0;
+  border-left: 4px solid #a66;
+  color: #a00;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  background: #ddd;
+  color: #600;
+}
+
+nav a:active {
+  background: #caa;
+}
