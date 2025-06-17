@@ -84,3 +84,30 @@ li {
 h2 + p {
   text-indent: 2em;
 }
+
+ul, ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.5em;
+  list-style-type: disc;
+}
+
+a {
+  text-decoration: underline;
+  color: #a00;
+  outline: none;
+}
+
+a:visited {
+  color: #800;
+}
+
+a:hover,
+a:focus {
+  color: #a66;
+  text-decoration: none;
+}
+
+a[href^="http"]:after {
+  content: " 🔗";
+  font-size: 0.8em;
+}
