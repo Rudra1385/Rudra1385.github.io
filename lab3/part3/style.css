@@ -61,3 +61,26 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+h1, h2 {
+  font-family: 'JosefinSlabBold', serif;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+li {
+  font-size: 1rem; 
+}
+
+h2 + p {
+  text-indent: 2em;
+}
