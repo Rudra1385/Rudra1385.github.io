@@ -9,14 +9,18 @@
 }
 /* General setup */
 
-* {
-  box-sizing: border-box;
+html {
+    font-family: 'LovatoLight', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.4px;
 }
 
 body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  line-height: 1.6;
+
 }
 
 /* Layout */
