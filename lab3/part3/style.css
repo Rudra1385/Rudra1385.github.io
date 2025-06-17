@@ -25,14 +25,19 @@ body {
 
 /* Layout */
 
+main {
+    overflow: hidden;
+}
+
 section {
   float: left;
-  width: 50%;
+  width: 45%;
+  margin-bottom: 2em;
 }
 
 aside {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
 nav {
