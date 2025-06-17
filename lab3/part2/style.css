@@ -7,3 +7,27 @@ body {
       margin: 0;
       font-family: Arial, sans-serif;
     }
+
+.cool-box {
+      width: 20rem; 
+      height: 12rem; 
+      margin: 100px auto; 
+      background-color: red; 
+      background-image: linear-gradient(
+        to top left,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0.2) 100%
+      ); 
+      color: white; 
+      font-size: 1.5rem; 
+      font-weight: bold;
+      text-align: center;
+      line-height: 12rem; 
+      border-radius: 20px; 
+      border: 1px solid darkred; 
+      text-shadow: 2px 2px 4px black; 
+      box-shadow:
+        4px 4px 10px rgba(0, 0, 0, 0.3),
+        -4px -4px 10px rgba(0, 0, 0, 0.2); 
+    }
