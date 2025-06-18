@@ -71,6 +71,9 @@ nav ul {
   width: 100%;
 }
 
-  .feature {
-      width: 200px;
-  }
+.feature {
+  width: 200px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+  
