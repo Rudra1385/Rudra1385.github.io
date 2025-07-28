@@ -1,3 +1,10 @@
+
+// Name: Rudra Chauhan
+// File: main.js
+// Date: 28 July 2025
+// Assignment 4 - part 2
+
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
