@@ -1,3 +1,9 @@
+
+// Name: Rudra Chauhan
+// File: main.js
+// Date: 28 July 2025
+// Assignment 4 - part 3
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
