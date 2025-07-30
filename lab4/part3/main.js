@@ -63,6 +63,34 @@ class Ball {
     this.x += this.velX;
     this.y += this.velY;
   }
+  // function for detecting collisions between balls
+  collisionDetect() {
+    for (const ball of balls) {
+      if (this !== ball) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+          this.color = ball.color = randomRGB();
+        }
+      }
+    }
+  }
+  // creating an array to store 25 random balls
+  const balls = [];
+  while (balls.length < 25) {
+    const size = random(10, 20);
+    const ball = new Ball(
+      random(size, width - size),
+      random(size, height - size),
+      random(-7, 7),
+      random(-7, 7),
+      randomRGB(),
+      size
+    );
+    balls.push(ball);
+  }
 }
 
 
