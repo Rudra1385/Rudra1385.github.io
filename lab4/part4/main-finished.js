@@ -142,8 +142,6 @@ let ballCount = 0;
 while (balls.length < 25) {
   const size = random(10, 20);
   const ball = new Ball(
-    // ball position always drawn at least one ball width
-    // away from the edge of the canvas, to avoid drawing errors
     random(0 + size, width - size),
     random(0 + size, height - size),
     random(-7, 7),
@@ -151,19 +149,28 @@ while (balls.length < 25) {
     randomRGB(),
     size
   );
-
   balls.push(ball);
+  ballCount++;
+  para.textContent = 'Ball count: ' + ballCount;
 }
+
+const evil = new EvilCircle(width / 2, height / 2);
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+
+  evil.draw();
+  evil.checkBounds();
+  evil.collisionDetect();
 
   requestAnimationFrame(loop);
 }
