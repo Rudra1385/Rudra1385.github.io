@@ -1,3 +1,8 @@
+// Name: Rudra Chauhan
+// File: main.js
+// Date: 08 August 2025
+// Assignment 5 - part 1
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
